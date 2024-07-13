@@ -79,6 +79,17 @@ input, textarea {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.query-type label {
+  margin-bottom: initial;
+  display: flex;
+  gap: 12px;
+}
+.query-type .form__group {
+  margin-bottom: initial;
+}
+.query-type .error-msg {
+  grid-column: 1/-1;
+}
 
 .query-type input {
   display: inline-block;
@@ -90,6 +101,11 @@ input, textarea {
   margin-bottom: 24px;
 }
 
+.message,
+.consent-container {
+  margin-bottom: 40px;
+}
+
 label {
   display: inline-block;
   margin-bottom: 8px;
@@ -97,7 +113,33 @@ label {
   line-height: 1.5;
 }
 
+legend {
+  margin-bottom: 8px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: initial;
+}
+.checkbox input {
+  width: initial;
+}
+
+.form__btn {
+  width: 100%;
+  background-color: #0C7D69;
+  padding: 16px 0;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+
 .error-msg {
   margin-top: 8px;
   color: #D73C3C;
+}
+
+.success-msg {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

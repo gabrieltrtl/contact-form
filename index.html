@@ -43,17 +43,19 @@
         </div>
         <p class="error-msg">Please select a query type</p>
       </fieldset>
-      <div class="form__group">
+      <div class="form__group message">
         <label for="message">Message</label>
         <textarea name="" id="message"></textarea>
         <p class="error-msg">This field is required</p>
       </div>  
-      <div class="form__group">
-        <label for="">I consent to being contacted by the team</label>
-        <input type="checkbox">
+      <div class="form__group consent-container">
+        <label class="checkbox" for="consent">
+          <input id="consent" type="checkbox">
+          I consent to being contacted by the team
+        </label>
         <p class="error-msg">To submit this form, please consent to being contacted</p>
       </div>
-      <button>Submit</button>
+      <button class="form__btn">Submit</button>
     </form>
     <div class="success-msg">
       <h2>Message Sent!</h2>
