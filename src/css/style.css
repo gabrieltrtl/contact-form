@@ -1,0 +1,103 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url(../../assets/fonts/Karla-VariableFont_wght.ttf);
+  font-weight: 100 900;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, fieldset {
+  border: none;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Karla";
+  background-color: #E0F1E8;
+  padding: 32px 16px;
+}
+
+.container__main {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 24px;
+}
+@media (min-width: 700px) {
+  .container__main {
+    padding: 40px;
+  }
+}
+
+.form__title {
+  margin-bottom: 32px;
+}
+
+input, textarea {
+  display: block;
+  border: 1px solid #86A2A5;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px 24px;
+}
+
+.query-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.query-type input {
+  display: inline-block;
+  width: initial;
+}
+
+.form__group {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #2A4144;
+  line-height: 1.5;
+}
+
+.error-msg {
+  margin-top: 8px;
+  color: #D73C3C;
+}/*# sourceMappingURL=style.css.map */
