@@ -85,6 +85,7 @@ input, textarea {
   border-radius: 8px;
   width: 100%;
   padding: 12px 24px;
+  accent-color: #0C7D69;
 }
 
 .query-type {
@@ -99,6 +100,7 @@ input, textarea {
   border: 1px solid #86A2A5;
   border-radius: 8px;
   padding: 12px 24px;
+  font-size: 18px;
 }
 .query-type .form__group {
   margin-bottom: initial;
@@ -106,7 +108,6 @@ input, textarea {
 .query-type .error-msg {
   grid-column: 1/-1;
 }
-
 .query-type input {
   display: inline-block;
   width: initial;
@@ -129,20 +130,27 @@ label, legend {
   line-height: 1.5;
 }
 
+label:not(.query-type label)::after,
+legend::after {
+  content: "*";
+  margin-left: 8px;
+  color: #0C7D69;
+}
+
 .checkbox {
   display: flex;
   align-items: center;
-  gap: 16px;
   margin-bottom: initial;
 }
 .checkbox input {
   width: initial;
+  margin-right: 16px;
 }
 
 .form__btn {
   width: 100%;
   background-color: #0C7D69;
-  padding: 16px 0;
+  padding: 20px 0;
   border-radius: 8px;
   color: #FFFFFF;
 }
