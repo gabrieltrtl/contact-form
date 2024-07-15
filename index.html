@@ -11,7 +11,7 @@
 
   <main class="container__main">
     <h1 class="form__title">Contact Us</h1>
-    <form class="form" action="">
+    <form class="form" action="" novalidate>
       <div class="form__group first-name">
         <label for="first-name">First Name</label>
         <input id="first-name" name="first-name" type="text" required>
@@ -45,12 +45,12 @@
       </fieldset>
       <div class="form__group message">
         <label for="message">Message</label>
-        <textarea name="" id="message" rows="5"></textarea>
+        <textarea name="" id="message" rows="5" required></textarea>
         <p class="error-msg">This field is required</p>
       </div>  
       <div class="form__group consent-container">
         <label class="checkbox" for="consent">
-          <input id="consent" type="checkbox">
+          <input id="consent" type="checkbox" required>
           I consent to being contacted by the team
         </label>
         <p class="error-msg">To submit this form, please consent to being contacted</p>
@@ -65,6 +65,6 @@
       <p class="success__text">Thanks for completing the form. We'll be in touch soon!</p>
     </div>
   </main>
-  
+  <script src="./src/js/main.js"></script>
 </body>
 </html>
