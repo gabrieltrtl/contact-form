@@ -61,6 +61,7 @@ body {
   background-color: #FFFFFF;
   border-radius: 16px;
   padding: 24px;
+  position: relative;
 }
 @media (min-width: 700px) {
   .container__main {
@@ -87,6 +88,10 @@ input, textarea {
   padding: 12px 24px;
   accent-color: #0C7D69;
 }
+input:hover, textarea:hover {
+  cursor: pointer;
+  border-color: #0C7D69;
+}
 
 .query-type {
   display: grid;
@@ -101,6 +106,10 @@ input, textarea {
   border-radius: 8px;
   padding: 12px 24px;
   font-size: 18px;
+}
+.query-type label:hover {
+  cursor: pointer;
+  border-color: #0C7D69;
 }
 .query-type .form__group {
   margin-bottom: initial;
@@ -128,6 +137,9 @@ label, legend {
   margin-bottom: 8px;
   color: #2A4144;
   line-height: 1.5;
+}
+label:hover, legend:hover {
+  cursor: pointer;
 }
 
 label:not(.query-type label)::after,
@@ -161,5 +173,32 @@ legend::after {
 }
 
 .success-msg {
-  display: none;
+  color: #FFFFFF;
+  background-color: #2A4144;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 24px;
+  border-radius: 12px;
+  width: 327px;
+  line-height: 1.5;
+}
+@media (min-width: 700px) {
+  .success-msg {
+    width: 450px;
+    top: -10px;
+  }
+}
+.success-msg .success__title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.success-msg .success__title {
+  font-size: 18px;
+}
+.success-msg .success__text {
+  color: #E0F1E8;
 }/*# sourceMappingURL=style.css.map */

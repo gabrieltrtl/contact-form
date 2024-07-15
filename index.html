@@ -29,13 +29,13 @@
       </div>
       <fieldset class="form__group query-type">
         <legend>Query Type</legend>
-        <div class="form__group">
+        <div class="form__group general">  
           <label for="general-enquiry">
             <input id="general-enquiry" type="radio" name="query-type" value="general-enquiry">
             General Enquiry
           </label>
         </div>
-        <div class="form__group">
+        <div class="form__group support">
           <label for="support-request">
             <input id="support-request" type="radio" name="query-type" value="support-request">
             Support Request
@@ -58,8 +58,11 @@
       <button class="form__btn">Submit</button>
     </form>
     <div class="success-msg">
-      <h2>Message Sent!</h2>
-      <p>Thanks for completing the form. We'll be in touch soon!</p>
+      <div class="success__title-wrapper">
+        <img src="./assets/images/icon-success-check.svg" alt="">
+        <h2 class="success__title">Message Sent!</h2>
+      </div>
+      <p class="success__text">Thanks for completing the form. We'll be in touch soon!</p>
     </div>
   </main>
   
