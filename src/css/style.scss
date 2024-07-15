@@ -42,6 +42,9 @@ body {
   font-family: "Karla";
   background-color: #E0F1E8;
   padding: 32px 16px;
+  @include device(tablet) {
+    padding: 32px 0;
+  }
 }
 
 .container__main {
@@ -50,6 +53,11 @@ body {
   padding: 24px;
   @include device(tablet) {
     padding: 40px;
+    max-width: 690px;
+    margin: 0 auto;
+  }
+  @include device(desktop) {
+    max-width: 736px;
   }
 }
 
@@ -68,10 +76,14 @@ input, textarea {
 .query-type {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 0 16px;
   label {
     margin-bottom: initial;
     display: flex;
     gap: 12px;
+    border: 1px solid #86A2A5;
+    border-radius: 8px;
+    padding: 12px 24px;
   }
   .form__group {
     margin-bottom: initial;
@@ -97,15 +109,11 @@ input, textarea {
   margin-bottom: 40px;
 }
 
-label {
+label, legend {
   display: inline-block;
   margin-bottom: 8px;
   color: #2A4144;
   line-height: 1.5;
-}
-
-legend {
-  margin-bottom: 8px;
 }
 
 .checkbox {
