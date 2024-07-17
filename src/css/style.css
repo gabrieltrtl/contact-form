@@ -136,6 +136,8 @@ textarea:focus {
 }
 .query-type .error-msg {
   grid-column: 1/-1;
+  grid-row: 2;
+  margin-top: 16px;
 }
 .query-type input {
   display: inline-block;
@@ -144,12 +146,16 @@ textarea:focus {
 
 .form__group {
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 56px;
+}
+
+.form__group.query-type {
+  margin-bottom: 64px;
 }
 
 .message,
 .consent-container {
-  margin-bottom: 40px;
+  margin-bottom: 72px;
 }
 
 label, legend {
@@ -194,6 +200,7 @@ legend::after {
 .error-msg {
   margin-top: 8px;
   color: #D73C3C;
+  position: absolute;
 }
 
 .success-msg {
