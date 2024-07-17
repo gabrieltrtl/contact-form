@@ -49,35 +49,35 @@ body {
   min-height: 100vh;
   font-family: "Karla";
   background-color: #E0F1E8;
-  padding: 32px 16px;
+  padding: 2rem 1rem;
 }
 @media (min-width: 700px) {
   body {
-    padding: 128px 39px;
+    padding: 8rem 2.4375rem;
   }
 }
 
 .container__main {
   background-color: #FFFFFF;
   border-radius: 16px;
-  padding: 24px;
+  padding: 1.5rem;
   position: relative;
 }
 @media (min-width: 700px) {
   .container__main {
-    padding: 40px;
-    max-width: 690px;
+    padding: 2.5rem;
+    max-width: 43.125rem;
     margin: 0 auto;
   }
 }
 @media (min-width: 75rem) {
   .container__main {
-    max-width: 736px;
+    max-width: 46rem;
   }
 }
 
 .form__title {
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
   color: #2A4144;
 }
 
@@ -86,7 +86,7 @@ input, textarea {
   border: 1px solid #86A2A5;
   border-radius: 8px;
   width: 100%;
-  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
   accent-color: #0C7D69;
 }
 input:hover, textarea:hover {
@@ -128,7 +128,7 @@ textarea:focus {
   gap: 12px;
   border: 1px solid #86A2A5;
   border-radius: 8px;
-  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
   font-size: 18px;
 }
 .query-type label:hover {
@@ -141,7 +141,7 @@ textarea:focus {
 .query-type .error-msg {
   grid-column: 1/-1;
   grid-row: 2;
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 .query-type input {
   display: inline-block;
@@ -150,17 +150,17 @@ textarea:focus {
 
 .form__group {
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .message,
 .consent-container {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 label, legend {
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   color: #2A4144;
   line-height: 1.5;
 }
@@ -171,7 +171,7 @@ label:hover, legend:hover {
 label:not(.query-type label)::after,
 legend::after {
   content: "*";
-  margin-left: 8px;
+  margin-left: 0.5rem;
   color: #0C7D69;
 }
 
@@ -182,13 +182,13 @@ legend::after {
 }
 .checkbox input {
   width: initial;
-  margin-right: 16px;
+  margin-right: 1rem;
 }
 
 .form__btn {
   width: 100%;
   background: #0C7D69;
-  padding: 20px 0;
+  padding: 1.25rem 0;
   border-radius: 8px;
   color: #FFFFFF;
 }
@@ -198,7 +198,7 @@ legend::after {
 }
 
 .error-msg {
-  margin-top: 8px;
+  margin-top: 0.5rem;
   color: #D73C3C;
 }
 
@@ -209,23 +209,23 @@ legend::after {
   top: 0px;
   left: 50%;
   transform: translateX(-50%);
-  padding: 24px;
+  padding: 1.5rem;
   border-radius: 12px;
-  width: 327px;
+  width: 20.4375rem;
   line-height: 1.5;
   display: none;
 }
 @media (min-width: 700px) {
   .success-msg {
-    width: 450px;
-    top: -104px;
+    width: 28.125rem;
+    top: -6.5rem;
   }
 }
 .success-msg .success__title-wrapper {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 .success-msg .success__title {
   font-size: 18px;
