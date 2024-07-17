@@ -209,6 +209,7 @@ legend::after {
   border-radius: 12px;
   width: 327px;
   line-height: 1.5;
+  display: none;
 }
 @media (min-width: 700px) {
   .success-msg {

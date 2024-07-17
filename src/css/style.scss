@@ -199,6 +199,7 @@ legend::after {
   border-radius: 12px;
   width: 327px;
   line-height: 1.5;
+  display: none;
   @include device(tablet) {
     width: 450px;
     top: -104px;
