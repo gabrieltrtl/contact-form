@@ -86,18 +86,22 @@ textarea:focus {
   border: 1px solid #0C7D69;
 }
 
-
+.name__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  gap: 16px;
+  .error-msg {
+    grid-row: 3;
+  }
+}
 
 .first-name,
 .last-name {
   @include device(tablet) {
     display: inline-block;
-    width: calc(50% - 10px); /* Cada div ocupa metade da largura da div pai com espaço entre elas */
+    
   }
-}
-
-.first-name {
-  margin-right: 16px; 
 }
 
 .query-type {
