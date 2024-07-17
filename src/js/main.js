@@ -5,7 +5,7 @@ function validateInputs(event) {
   event.preventDefault();
 
   let isValid = true;
-  const nameRegex = /^[a-zA-ZÀ-ÖØ-öø-ÿ]+$/;
+  const nameRegex = /^[a-zA-ZÀ-ÖØ-öø-ÿ\s]+$/;
 
   // First Name Validation
   const firstName = document.getElementById('first-name');
@@ -29,11 +29,28 @@ function validateInputs(event) {
     isValid = false;
   }
 
+  // Query Validation
   const queryType = document.querySelector('input[name="query-type"]:checked');
   if (!queryType) {
     isValid = false;
   }
 
+  // Message Validation
+  const message = document.getElementById('message');
+  if (message.validity.valueMissing) {
+    isValid = false;
+  }
+
+  // Consent Validation
+  const consent = document.getElementById('consent');
+  if (!consent.checked) {
+    isValid = false;
+  }
+
+  
+  if(isValid) {
+
+  }
   
 
 }
